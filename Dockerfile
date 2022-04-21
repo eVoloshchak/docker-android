@@ -99,6 +99,7 @@ RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION} | bash - \
     && apt-get install -qq -y --no-install-recommends nodejs \
     && npm i -g yarn \
     && rm -rf /var/lib/apt/lists/*
+    && npm i mkdirp@latest
 
 # Full reference at https://dl.google.com/android/repository/repository2-1.xml
 # download and unpack android
